@@ -8,7 +8,7 @@ dotenv.config();
 
 async function startServer() {
   const app = express();
-  const PORT = process.env.PORT;
+  const PORT = process.env.PORT ;
 
   app.use(express.json());
 app.use(cors())
@@ -78,7 +78,7 @@ app.use(cors())
 
 
   app.listen(PORT, () => {
-    console.log(`Server running on http://localhost:${PORT}`);
+   console.log(`Server running on port ${PORT}`);
   });
 }
 
